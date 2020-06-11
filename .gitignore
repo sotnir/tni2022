@@ -3,3 +3,7 @@
 .sass-cache
 _site
 __pycache__
+.idea
+.jekyll-cache
+.ruby-version
+error.log
