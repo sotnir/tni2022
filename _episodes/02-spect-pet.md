@@ -1,9 +1,9 @@
 ---
-title: "A second part"
+title: "SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorde"
 teaching: 60
 exercises: 0
 questions:
-- "Can we break up the lesson into multiple parts?"
+- "What are SPECT and PET imaging?"
 objectives:
 - "See that you can have more than one part for the lesson"
 keypoints:

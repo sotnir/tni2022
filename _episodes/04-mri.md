@@ -1,7 +1,7 @@
 ---
-title: "Wrap-Up"
+title: "MRI Neuroimaging technique in clinical applications"
 teaching: 30
-exercises: 15
+exercises: 0
 questions:
 - "What have we learned?"
 objectives:

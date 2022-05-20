@@ -1,13 +1,12 @@
 ---
-title: "An introduction to this lesson"
-teaching: 60
+title: "Overview of neuroimaging research at Southampton"
+teaching: 30
 exercises: 0
 questions:
-- "What do we need a template for?"
+- "What is going on for neuroimaging research at Southampton?"
 objectives:
-- "Edit lesson materials in the template"
-- "Contribute fixes through Github PRs"
-- "Use the template to create your own lesson"
+- "To give a very brief overview"
+- "Get to know some research activities at Southampton that utilise neuroimaging"
 keypoints:
 - We want to use this template to provide lesson materials in an open and useful format.
 

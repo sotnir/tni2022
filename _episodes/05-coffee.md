@@ -1,6 +1,6 @@
 ---
 layout: break
-title: "Morning Coffee"
+title: "Afternoon Coffee"
 teaching: 780
 exercises: 0
 break: 15
