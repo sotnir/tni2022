@@ -1,7 +1,7 @@
 ---
 title: "A second part"
-teaching: 5
-exercises: 5
+teaching: 60
+exercises: 0
 questions:
 - "Can we break up the lesson into multiple parts?"
 objectives:

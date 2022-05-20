@@ -1,6 +1,6 @@
 ---
-title: "Wrap-Up"
-teaching: 30
+title: "Second Day test"
+teaching: 120
 exercises: 15
 questions:
 - "What have we learned?"

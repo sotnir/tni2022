@@ -1,6 +1,6 @@
 ---
 title: "An introduction to this lesson"
-teaching: 15
+teaching: 60
 exercises: 0
 questions:
 - "What do we need a template for?"
