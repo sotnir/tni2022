@@ -6,7 +6,7 @@
   <h2>Schedule</h2>
 
   {% assign day = 0 %}
-  {% assign multiday = false %}
+  {% assign multiday = true %}
   {% for episode in site.episodes %}
     {% if episode.start %}{% assign multiday = true %}{% break %}{% endif %}
   {% endfor %}
