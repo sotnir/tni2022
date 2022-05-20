@@ -1,7 +1,5 @@
 ---
-title: "Addressing Clinical Research Questions Using Neuroimaging"
-start_time: 810
-start: true
+title: "Programming and medical software development"
 teaching: 45
 exercises: 15
 questions:

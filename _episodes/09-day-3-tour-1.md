@@ -1,11 +1,11 @@
 ---
-title: "Addressing Clinical Research Questions Using Neuroimaging"
-start_time: 810
+title: "Scanner Tour"
+start_time: 1020
 start: true
-teaching: 45
-exercises: 15
+teaching: 30
+exercises: 0
 questions:
-- "What have we learned?"
+- "Transportation (Arrival), Logistics explained"
 objectives:
 - "Recap what you've learned"
 keypoints:

@@ -2,7 +2,11 @@
 layout: lesson
 ---
 
-TODO: Here provide a very short (1 sentence) description of the module.
+This module will showcase the collaboration between the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS) in translational neuroimaging research.
+
+**Day 1:** Tuesday 19 July, 1:30PM-4:30PM  
+**Day 2:** Thursday 21 July, 9:30AM-12:30PM   
+**Day 3:** Thursday 28 July, 5PM-8PM  
 
 This module is a part of the training curriculum from
 the [ReproNim](http://www.reproducibleimaging.org) (Reproducible Neuroimaging) Center.

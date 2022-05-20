@@ -1,17 +1,17 @@
 ---
-title: "Overview of neuroimaging research at Southampton"
+title: "Welcome & Overview"
+start_time: 570
+start: true
 teaching: 30
 exercises: 0
 questions:
-- "What is going on for neuroimaging research at Southampton?"
+- Overview of neuroimaging research at Southampton
 objectives:
-- "To give a very brief overview"
 - "Get to know some research activities at Southampton that utilise neuroimaging"
 keypoints:
 - We want to use this template to provide lesson materials in an open and useful format.
 
 - This is in line with our overall goal of making science (including scientific training) more open.
-
 ---
 
 ### ReproNim is *open*

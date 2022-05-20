@@ -1,9 +1,9 @@
 ---
 layout: break
-title: "Afternoon Coffee"
-teaching: 15
+title: "Transportation (Departure)"
+teaching: 0
 exercises: 0
-break: 15
+break: 30
 ---
 
 Use the `break` layout to describe things you think people might want to

@@ -1,11 +1,9 @@
 ---
-title: "Addressing Clinical Research Questions Using Neuroimaging"
-start_time: 810
-start: true
-teaching: 45
-exercises: 15
+title: "Scanner Tour"
+teaching: 60
+exercises: 0
 questions:
-- "What have we learned?"
+- "Nuclear Medicine Tour"
 objectives:
 - "Recap what you've learned"
 keypoints:

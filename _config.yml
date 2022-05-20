@@ -3,7 +3,7 @@
 #------------------------------------------------------------
 
 # What kind of thing is this ("workshop" or "lesson")?
-kind: "lesson"
+kind: "workshop"
 
 # Overall title for pages.
 title: "Translational neuroimaging: from research to the clinics"
@@ -37,7 +37,7 @@ rn_site: "https://repronim.github.io"
 rn_github: "https://github.com/repronim"
 
 # Start time in minutes (540 is 09:00 am)
-start_time: 570
+# start_time: 570
 
 # Specify that things in the episodes collection should be output.
 collections:
