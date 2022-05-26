@@ -4,9 +4,16 @@ layout: lesson
 
 This module will showcase the collaboration between the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS) in translational neuroimaging research.
 
-**Day 1:** Tuesday 19 July, 1:30PM-4:30PM  
-**Day 2:** Thursday 21 July, 9:30AM-12:30PM   
-**Day 3:** Thursday 28 July, 5PM-8PM  
+### Objectives
+ 1. Excite students about opportunities that exist to use advanced neuroimaging techniques (MRI, SPECT, PET) and analysis methods to answer key clinical research questions. 
+ 2. Explain the research journey from image acquisition to data analysis/quantification and eventually to clinical translation.
+ 3. Explore the challenges and solutions at each stage.
+
+Nine hours will be divided into three morning/afternoon sessions delivered by teams of staff/PhD students from the University and UHS.
+
+**Day 1:** Tuesday 19 July 2022, 1:30PM-4:30PM  
+**Day 2:** Thursday 21 July 2022, 9:30AM-12:30PM   
+**Day 3:** Thursday 28 July 2022, 5PM-8PM  
 
 This module is a part of the training curriculum from
 the [ReproNim](http://www.reproducibleimaging.org) (Reproducible Neuroimaging) Center.

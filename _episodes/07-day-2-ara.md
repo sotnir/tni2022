@@ -1,6 +1,8 @@
 ---
-title: "MRI Neuroimaging technique in clinical applications"
-teaching: 30
+title: "Addressing Clinical Research Questions Using Neuroimaging"
+start_time: 810
+start: true
+teaching: 50
 exercises: 0
 questions:
 - "What have we learned?"

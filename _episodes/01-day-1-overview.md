@@ -1,13 +1,14 @@
 ---
-title: "Welcome & Overview"
+title: "Overview"
 start_time: 570
 start: true
-teaching: 30
+teaching: 25
 exercises: 0
 questions:
 - Overview of neuroimaging research at Southampton
+- MRI Neuroimaging technique in clinical applications
 objectives:
-- "Get to know some research activities at Southampton that utilise neuroimaging"
+- Get to know some of the clinical research activities at Southampton that utilise neuroimaging.
 keypoints:
 - We want to use this template to provide lesson materials in an open and useful format.
 

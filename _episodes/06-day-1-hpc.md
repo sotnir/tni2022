@@ -1,9 +1,8 @@
 ---
-title: "SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorde"
+title: "High Performance Computing"
 teaching: 60
 exercises: 0
 questions:
-- "What are SPECT and PET imaging?"
 objectives:
 - "See that you can have more than one part for the lesson"
 keypoints:

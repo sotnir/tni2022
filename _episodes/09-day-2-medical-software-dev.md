@@ -1,9 +1,7 @@
 ---
-title: "Addressing Clinical Research Questions Using Neuroimaging"
-start_time: 810
-start: true
-teaching: 45
-exercises: 15
+title: "Medical Software Development"
+teaching: 50
+exercises: 0
 questions:
 - "What have we learned?"
 objectives:

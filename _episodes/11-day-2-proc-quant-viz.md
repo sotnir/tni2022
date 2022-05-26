@@ -1,7 +1,7 @@
 ---
-title: "Programming and medical software development"
-teaching: 45
-exercises: 15
+title: "Image Processing, Quantification & Visualization"
+teaching: 60
+exercises: 0
 questions:
 - "What have we learned?"
 objectives:
