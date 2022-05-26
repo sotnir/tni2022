@@ -6,7 +6,6 @@ teaching: 25
 exercises: 0
 questions:
 - Overview of neuroimaging research at Southampton
-- MRI Neuroimaging technique in clinical applications
 objectives:
 - Get to know some of the clinical research activities at Southampton that utilise neuroimaging.
 keypoints:
