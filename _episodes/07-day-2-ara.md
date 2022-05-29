@@ -1,11 +1,11 @@
 ---
-title: "Addressing Clinical Research Questions Using Neuroimaging"
-start_time: 810
+title: "Neuroimaging Study Design"
+start_time: 570
 start: true
-teaching: 50
+teaching: 55
 exercises: 0
 questions:
-- "What have we learned?"
+- "Addressing Clinical Research Questions Using Neuroimaging"
 objectives:
 - "Recap what you've learned"
 keypoints:

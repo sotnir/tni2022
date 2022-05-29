@@ -1,11 +1,11 @@
 ---
-title: "Scanner Tour"
+title: "Pre-Departure"
 start_time: 1020
 start: true
 teaching: 30
 exercises: 0
 questions:
-- "Transportation (Arrival), Logistics explained"
+- "Logistics explained"
 objectives:
 - "Recap what you've learned"
 keypoints:

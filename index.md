@@ -2,6 +2,8 @@
 layout: lesson
 ---
 
+<img src="{{ page.root }}/assets/img/neonatal-hie-mechanism.png" alt="Mechanisms Overview" width="100%"/>
+
 This module will showcase the collaboration between the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS) in translational neuroimaging research.
 
 ### Objectives

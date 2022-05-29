@@ -1,8 +1,8 @@
 ---
 title: "Overview"
-start_time: 570
+start_time: 810
 start: true
-teaching: 25
+teaching: 30
 exercises: 0
 questions:
 - Overview of neuroimaging research at Southampton

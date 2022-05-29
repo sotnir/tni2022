@@ -1,6 +1,6 @@
 ---
 title: "Nuclear Imaging"
-teaching: 50
+teaching: 55
 exercises: 0
 questions:
 - SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorder

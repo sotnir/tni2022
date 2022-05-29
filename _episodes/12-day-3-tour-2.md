@@ -1,9 +1,9 @@
 ---
-title: "Scanner Tour"
+title: "MRI Tour"
 teaching: 60
 exercises: 0
 questions:
-- "MRI Tour"
+- "Virtual Tour, Phantom, PACS, Data Pseudonymisation"
 objectives:
 - "Recap what you've learned"
 keypoints:

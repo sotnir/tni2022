@@ -1,8 +1,9 @@
 ---
-title: "High Performance Computing"
+title: "Cloud Computing"
 teaching: 60
 exercises: 0
 questions:
+- "High Performance Computing"
 objectives:
 - "See that you can have more than one part for the lesson"
 keypoints:

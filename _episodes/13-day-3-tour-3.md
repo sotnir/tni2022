@@ -1,9 +1,9 @@
 ---
-title: "Scanner Tour"
+title: "Nuclear Medicine Tour"
 teaching: 60
 exercises: 0
 questions:
-- "Nuclear Medicine Tour"
+- "Virtual Tour"
 objectives:
 - "Recap what you've learned"
 keypoints:

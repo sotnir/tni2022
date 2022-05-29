@@ -3,7 +3,7 @@ layout: break
 title: "Coffee"
 teaching: 0
 exercises: 0
-break: 10
+break: 5
 ---
 
 Use the `break` layout to describe things you think people might want to

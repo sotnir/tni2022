@@ -1,9 +1,9 @@
 ---
-title: "Image Processing, Quantification & Visualization"
-teaching: 60
+title: "Conclusion"
+teaching: 30
 exercises: 0
 questions:
-- "What have we learned?"
+- "Concluding Remarks, Group Photo, Departure"
 objectives:
 - "Recap what you've learned"
 keypoints:

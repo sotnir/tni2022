@@ -1,9 +1,9 @@
 ---
-title: "Medical Software Development"
-teaching: 55
+title: "Hand-on Workshop"
+teaching: 60
 exercises: 0
 questions:
-- "What have we learned?"
+- "Image Processing, Quantification & Visualization"
 objectives:
 - "Recap what you've learned"
 keypoints:
