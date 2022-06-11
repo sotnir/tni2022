@@ -21,7 +21,8 @@ keypoints:
  
 An overview of the different phases of the mechanisms is illustrated below [[Davidson et al., 2021](https://doi.org/10.1016/j.siny.2021.101267)]:
 
-<img src="{{ page.root }}/assets/img/neonatal-hie-mechanism.png" alt="Mechanisms Overview" width="80%"/>
+<img src="{{ page.root }}/tni2022/assets/img/neonatal-hie-mechanism.png" 
+alt="Mechanisms Overview" width="80%"/>
 
 **Therapeutic Hypothermia (TH)** reduce cerebral metabolic demand by lowering the temperature, therefore improve neurological recovery and reduce mortality.
 
