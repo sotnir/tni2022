@@ -1,7 +1,7 @@
 ---
 title: "Magnetic Resonance Imaging"
-teaching: 25
-exercises: 0
+teaching: Self-paced
+exercises: 25
 questions:
 - "MRI Neuroimaging technique in clinical applications"
 objectives:
@@ -37,13 +37,17 @@ Newborn babies who had HIE at birth and underwent TH and without CP, typically s
 
 **Diffusion weighted imaging (DWI)**
 
-**Magentic resonance spectroscopy**
+**Magentic resonance spectroscopy (MRS)**
 
 **Susceptibility-weighted imaging (SWI)**
 
 **Arterial spin labelling (ASL)**
 
 To be added
+
+> ## Selected External Lesson Material
+> 1. Newborn Brain Society webinar: [Imaging of HIE: Qualitative and Quantitative Evaluation of Injury](https://vimeo.com/709778118)
+{: .callout}
 
 > ## Exercises and challenges (click on the arrow to the right to open)
 >
@@ -55,3 +59,10 @@ To be added
 >    - It gives people a chance to engage in peer instruction, which is
 >      is [known to help learning](https://en.wikipedia.org/wiki/Peer_instruction).
 {: .challenge}
+
+> ## References
+>
+> 1. Rutherford M. (2001). [Chapter 6 – The asphyxiated term infant](http://www.mrineonatalbrain.com/ch04-06.php), MRI of the Neonatal Brain.
+>
+> To be added
+{: .callout}
