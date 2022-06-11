@@ -2,7 +2,7 @@
 layout: lesson
 ---
 
-<img src="{{ page.root }}/assets/img/tni-repronim-cover.png" alt="Mechanisms Overview" width="100%"/>
+<img src="{{ page.root }}/tni2022/assets/img/tni-repronim-cover.png" alt="Cover Image" width="100%"/>
 
 ### Overview
 
