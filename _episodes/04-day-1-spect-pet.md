@@ -1,9 +1,9 @@
 ---
-title: "Nuclear Imaging"
+title: "SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorder"
 teaching: 55
 exercises: 0
 questions:
-- SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorder
+- Sofia Michopoulou
 objectives:
 - "See that you can have more than one part for the lesson"
 keypoints:

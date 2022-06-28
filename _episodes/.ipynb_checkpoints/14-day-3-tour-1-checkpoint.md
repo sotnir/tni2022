@@ -1,9 +1,11 @@
 ---
-title: "Medical Software Development"
-teaching: 25
+title: "Pre-Departure"
+start_time: 1020
+start: true
+teaching: 30
 exercises: 0
 questions:
-- James Leighs
+- "Logistics explained"
 objectives:
 - "Recap what you've learned"
 keypoints:

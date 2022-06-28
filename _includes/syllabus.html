@@ -22,8 +22,8 @@
         <tr>
           {% if multiday %}<td></td>{% endif %}
           <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-          <td class="col-md-3">Finish</td>
-          <td class="col-md-7"></td>
+          <td class="col-md-7">Finish</td>
+          <td class="col-md-3"></td>
         </tr>
       {% endif %}
       {% assign current = episode.start_time %} {% comment %}Re-set start time of this episode to general daily start time {% endcomment %}
@@ -33,10 +33,10 @@
     <tr>
       {% if multiday %}<td class="col-md-1"><strong>{% if episode.start %}Day {{ day }}{% endif %}</strong></td>{% endif %}
       <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-      <td class="col-md-3">
+      <td class="col-md-7">
         <a href="{{ site.root }}{{ episode.url }}">{{ episode.title }}</a>
       </td>
-      <td class="col-md-7">
+      <td class="col-md-3">
         {% if episode.break %}
           Break
         {% else %}
@@ -58,8 +58,8 @@
   <tr>
     {% if multiday %}<td></td>{% endif %}
     <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-    <td class="col-md-3">Finish</td>
-    <td class="col-md-7"></td>
+    <td class="col-md-7">Finish</td>
+    <td class="col-md-3"></td>
   </tr>
   </table>
 </div>

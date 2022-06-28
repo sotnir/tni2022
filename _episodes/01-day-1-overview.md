@@ -1,11 +1,11 @@
 ---
-title: "Overview"
+title: "Overview of neuroimaging research at Southampton"
 start_time: 810
 start: true
 teaching: 30
 exercises: 0
 questions:
-- Overview of neuroimaging research at Southampton
+- Angela Darekar
 objectives:
 - Get to know some of the clinical research activities at Southampton that utilise neuroimaging.
 keypoints:

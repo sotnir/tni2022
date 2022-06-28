@@ -1,9 +1,9 @@
 ---
-title: "Medical Software Development"
-teaching: 25
+title: "Programming for Reproducible Neuroimaging"
+teaching: 55
 exercises: 0
 questions:
-- James Leighs
+- Nathan Huneke
 objectives:
 - "Recap what you've learned"
 keypoints:

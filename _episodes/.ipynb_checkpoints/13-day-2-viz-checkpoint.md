@@ -1,9 +1,9 @@
 ---
-title: "Medical Software Development"
-teaching: 25
+title: "Image processing, Quantification & Visualization"
+teaching: 30
 exercises: 0
 questions:
-- James Leighs
+- Yukai Zou
 objectives:
 - "Recap what you've learned"
 keypoints:

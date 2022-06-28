@@ -1,9 +1,9 @@
 ---
-title: "Hand-on Workshop"
-teaching: 60
+title: "Image processing, Quantification & Visualization"
+teaching: 30
 exercises: 0
 questions:
-- "Image Processing, Quantification & Visualization"
+- Yukai Zou
 objectives:
 - "Recap what you've learned"
 keypoints:
