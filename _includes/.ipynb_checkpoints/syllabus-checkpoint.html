@@ -22,8 +22,8 @@
         <tr>
           {% if multiday %}<td></td>{% endif %}
           <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-          <td class="col-md-7">Finish</td>
-          <td class="col-md-3"></td>
+          <td class="col-md-3">Finish</td>
+          <td class="col-md-7"></td>
         </tr>
       {% endif %}
       {% assign current = episode.start_time %} {% comment %}Re-set start time of this episode to general daily start time {% endcomment %}
@@ -33,20 +33,16 @@
     <tr>
       {% if multiday %}<td class="col-md-1"><strong>{% if episode.start %}Day {{ day }}{% endif %}</strong></td>{% endif %}
       <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
+      <td class="col-md-3">
+        <a href="{{ site.root }}{{ episode.url }}">{{ episode.title }}</a>
+      </td>
       <td class="col-md-7">
         {% if episode.break %}
-          {{ episode.title }}
+          Break
         {% else %}
-          <a href="{{ site.root }}{{ episode.url }}">{{ episode.title }}</a>
-        {% endif %}
-      </td>
-      <td class="col-md-3">
-        {% if episode.break %}
-          
-        {% else %}
-          {% if episode.instructor %}
-            {% for instructor in episode.instructor %}
-              {{instructor|markdownify|strip_html}}
+          {% if episode.questions %}
+            {% for question in episode.questions %}
+              {{question|markdownify|strip_html}}
               {% unless forloop.last %}
               <br/>
               {% endunless %}
@@ -62,8 +58,8 @@
   <tr>
     {% if multiday %}<td></td>{% endif %}
     <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-    <td class="col-md-7">Finish</td>
-    <td class="col-md-3"></td>
+    <td class="col-md-3">Finish</td>
+    <td class="col-md-7"></td>
   </tr>
   </table>
 </div>

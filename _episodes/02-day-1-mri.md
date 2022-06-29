@@ -2,9 +2,9 @@
 title: "MRI Neuroimaging technique in clinical applications"
 teaching: Self-paced
 exercises: 25
-questions:
-- Yukai Zou
+instructor:
 - Mobeen Ali
+- Yukai Zou
 objectives:
 - "Recap what you've learned"
 keypoints:

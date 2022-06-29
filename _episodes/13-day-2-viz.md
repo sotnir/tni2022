@@ -2,7 +2,7 @@
 title: "Image processing, Quantification & Visualization"
 teaching: 30
 exercises: 0
-questions:
+instructor:
 - Yukai Zou
 objectives:
 - "Recap what you've learned"

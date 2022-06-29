@@ -4,7 +4,7 @@ start_time: 810
 start: true
 teaching: 30
 exercises: 0
-questions:
+instructor:
 - Angela Darekar
 objectives:
 - Get to know some of the clinical research activities at Southampton that utilise neuroimaging.

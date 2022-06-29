@@ -2,7 +2,7 @@
 title: "SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorder"
 teaching: 55
 exercises: 0
-questions:
+instructor:
 - Sofia Michopoulou
 objectives:
 - "See that you can have more than one part for the lesson"

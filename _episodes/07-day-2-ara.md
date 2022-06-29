@@ -4,7 +4,7 @@ start_time: 570
 start: true
 teaching: 55
 exercises: 0
-questions:
+instructor:
 - Aravinthan Varatharaj
 objectives:
 - "Recap what you've learned"

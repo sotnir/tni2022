@@ -2,7 +2,7 @@
 title: "Cloud Computing"
 teaching: 60
 exercises: 0
-questions:
+instructor:
 - Chris Dye
 - Beven Sandengu
 objectives:

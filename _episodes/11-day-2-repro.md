@@ -2,7 +2,7 @@
 title: "Programming for Reproducible Neuroimaging"
 teaching: 55
 exercises: 0
-questions:
+instructor:
 - Nathan Huneke
 objectives:
 - "Recap what you've learned"

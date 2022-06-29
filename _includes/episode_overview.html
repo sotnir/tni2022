@@ -11,10 +11,10 @@
       <strong>Exercises:</strong> {{ page.exercises }} min
     </div>
     <div class="col-md-9">
-      <strong>Questions</strong>
+      <strong>Instructor</strong>
       <ul>
-	{% for question in page.questions %}
-	<li>{{ question|markdownify }}</li>
+	{% for instructor in page.instructor %}
+	<li>{{ instructor|markdownify }}</li>
 	{% endfor %}
       </ul>
     </div>

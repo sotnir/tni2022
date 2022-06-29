@@ -2,7 +2,7 @@
 title: "Medical Software Development"
 teaching: 25
 exercises: 0
-questions:
+instructor:
 - James Leighs
 objectives:
 - "Recap what you've learned"
