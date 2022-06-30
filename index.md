@@ -41,3 +41,13 @@ Please click on the buttons below to complete the surveys before and after the m
     <button type="button" class="btn btn-info">Post-module Survey</button>
   </a>
 </p>
+
+### Using NITRC-CE
+
+Clicking the NITRC-CE button below will launch an interactive computing environment with all of the necessary neuroimaging tools and software packages pre-installed. After launching the environment, follow the instructions from module instructor.
+
+<p>
+<a href="{{ page.root }}">
+    <button type="button" class="btn btn-info">Launch NITRC-CE</button>
+  </a>
+</p>
