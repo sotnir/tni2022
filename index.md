@@ -4,7 +4,7 @@ layout: lesson
 
 <img src="{{ page.root }}/tni2022/assets/img/tni-repronim-cover.png" alt="Cover Image" width="100%"/>
 
-### Overview
+## Overview
 
 This module is offered through the [University of Southampton International Summer School](https://www.southampton.ac.uk/international_summer_school), under the theme "[Challenges in Medicine](https://www.southampton.ac.uk/international_summer_school/themes/challenges-in-medicine/medicine-homepage.page)". The module will showcase the collaboration between the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS) in translational neuroimaging research. 
 
@@ -23,12 +23,12 @@ ReproNim modules is based on the templates of
 [Neurohackweek]({{site.nhw_site }}), [Data Carpentry]({{ site.dc_site }})
 and [Software Carpentry]({{ site.swc_site }}) workshops.
 
-### Objectives
+## Objectives
  1. Excite students about opportunities that exist to use advanced neuroimaging techniques (MRI, SPECT, PET) and analysis methods to answer key clinical research questions. 
  2. Explain the research journey from image acquisition to data analysis/quantification and eventually to clinical translation.
  3. Explore the challenges and solutions at each stage.
 
-### Surveys
+## Surveys
 
 Please click on the buttons below to complete the surveys before and after the module.
 
@@ -42,12 +42,12 @@ Please click on the buttons below to complete the surveys before and after the m
   </a>
 </p>
 
-### Using NITRC-CE
+## Using NITRC-CE
 
 Clicking the NITRC-CE button below will launch an interactive computing environment with all of the necessary neuroimaging tools and software packages pre-installed. After launching the environment, follow the instructions from module instructor.
 
 <p>
-<a href="{{ page.root }}">
+<a href="https://3.10.59.219/">
     <button type="button" class="btn btn-info">Launch NITRC-CE</button>
   </a>
 </p>
