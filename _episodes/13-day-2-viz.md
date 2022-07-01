@@ -1,7 +1,7 @@
 ---
 title: "Neuroimaging Data and the FAIR Principles"
-teaching: 30
-exercises: 0
+teaching: Self-paced
+exercises: 30
 instructor:
 - Yukai Zou
 objectives:
@@ -18,10 +18,11 @@ keypoints:
 This lesson provides an overview of strategies for making research outputs available through the web, with an emphasis on data. It introduces concepts such persistent identifiers, linked data, the semantic web and the FAIR principles. It is designed for those with little to no familiarity with these concepts. More technical discussions can be found in the reference materials.
 
 > ## Lesson Episodes
-> - Research objects and identifier systems
-> - Short history of open & linked data technologies
-> - Benefits of linked open data with examples
-> - Towards the FAIR principles
+> - [Research objects and identifier systems](#research-obj)
+> - [Short history of open & linked data technologies](#short-history)
+> - [Benefits of linked open data with examples](#benefits-lod)
+> - [Towards the FAIR principles](#fair-principles)
+> - [FAIR Neuroimaging Data](#fair-neuroimaging-data)
 {: .callout}
 
 > ## References
@@ -37,6 +38,7 @@ This lesson provides an overview of strategies for making research outputs avail
 >   - Tom Heath and Christian Bizer (2011) Linked Data: Evolving the Web into a Global Data Space (1st edition). Synthesis Lectures on the Semantic Web: Theory and Technology, 1:1, 1-136. Morgan & Claypool. [[link](http://linkeddatabook.com/editions/1.0/)]
 {: .callout}
 
+<a name="research-obj"></a>
 ## Research objects and identifier systems
 
 The advent of computers and networks have allowed scientists to share not only the final report of the work, i.e., the scientific article, but also additional research products that form an integral part of the work, e.g., data, code,  workflows and even works like slide presentations. The term "research object" in a general sense connotes these many outputs of scientific research. The term ["research object"](https://en.wikipedia.org/wiki/Research_Object) is also used specifically to refer to a method for the identification, aggregation and exchange of scholarly information on the Web. The basic idea is that each of these objects should have its own persistent identifier (see below) and objects that belong together, e.g., an article with its associated code and data, should have some means of being aggregated, so that all associated research objects can be discovered together.  Although this might seem to be obvious, as research objects are scattered across different repositories on the web, the connections between them are often lost.
@@ -47,11 +49,11 @@ Identifiers for non-digital objects: Persistent identifiers can still be assigne
 
 Although a URL can be thought of as a form of PID, PIDs are actually distinct from locators like URLs in that they retrieve an object independent of where the object is located on the web. We are all familiar with broken links on the web. A broken link happens when a web browser sends out a request to a server for a document with a specified URL. If that URL no longer exists, because, for example, the system administrator migrated systems and created a new URL or if someone decided to no longer pay the fee to keep up a particularly domain name on the internet, we get a `404: Document not found error`. In scholarship, the [404 error](http://www.cs.umd.edu/~golbeck/LBSC690/SemanticWeb.html) is particularly pernicious as it breaks the chain of evidence that is provided within a scientific paper. If we refer to a web page that no longer exists, we have no way to verify or benefit from the information in that web page. Broken links can be avoided by making sure that re-direct pages are available for old URLs, but how do you know that the new URL actually points to the same document? Also, what happens when multiple copies of the same article exist in different places? Each of those places would have its own URL, making it look to a computer as if the objects they reference are different.
 
-PIDs actually address both of these problems. The identifier is separated from the location so that it buffers against changes in location. If a web document is moved to a new location, the new location is registered with the resolving system so that it now points to the same object in a new place. If the same object is present in multiple locations, e.g., a scientific article can be found at the publisher's web site, in Pub Med Central and in platforms such as Mendeley, the DOI listed as part of the metadata is the same, so we know that it is the same article in different places. It is important to note that these identifier systems, as will be discussed below in the FAIR principles, are not magic. Rather they are a social contract between the publisher of research objects and users that they will maintain the integrity of the resolution services.
+PIDs actually address both of these problems. The identifier is separated from the location so that it buffers against changes in location. If a web document is moved to a new location, the new location is registered with the resolving system so that it now points to the same object in a new place. If the same object is present in multiple locations, e.g., a scientific article can be found at the publisher's web site, in PubMed Central and in platforms such as Mendeley, the DOI listed as part of the metadata is the same, so we know that it is the same article in different places. It is important to note that these identifier systems, as will be discussed below in the FAIR principles, are not magic. Rather they are a social contract between the publisher of research objects and users that they will maintain the integrity of the resolution services.
 
 ### Persistent Identifiers in Neuroimaging
 
-The application of persistent identifiers in neuroimaging has been discussed in the context of data citation: "Data Citation in Neuroimaging: Proposed Best Practices for Data Identification and Attribution" (Honor, Haselgrove, Frazier, Kennedy 2016; [doi: 10.3389/fninf.2016.00034](https://doi.org/10.3389/fninf.2016.00034)). This paper presents a prototype system to integrate Digital Object Identifiers (DOI) and a standardized metadata schema into a XNAT-based repository, allowing for identification of data at both the project and image level. This identification scheme allows any newly defined combination of images, aggregated from any number of projects, to be tagged with a new group-level DOI that automatically inherits the individual attributes and provenance information of its constituent parts. This allows for the consistent identification of data used as part of an analysis - a key aspect in ensuring analyses are reproducible.
+The application of persistent identifiers in neuroimaging has been discussed in the context of data citation: "Data Citation in Neuroimaging: Proposed Best Practices for Data Identification and Attribution" ([Honor et al., 2016](https://doi.org/10.3389/fninf.2016.00034)). This paper presents a prototype system to integrate Digital Object Identifiers (DOI) and a standardized metadata schema into a XNAT-based repository, allowing for identification of data at both the project and image level. This identification scheme allows any newly defined combination of images, aggregated from any number of projects, to be tagged with a new group-level DOI that automatically inherits the individual attributes and provenance information of its constituent parts. This allows for the consistent identification of data used as part of an analysis - a key aspect in ensuring analyses are reproducible.
 
 > ## Selected External Lesson Material
 > 1. An overview of persistent identifiers from the Australian National Data Service: [Unpacking Persistent Identifiers for Research](https://www.slideshare.net/AustralianNationalDataService/unpacking-persistent-identifiers-for-research)
@@ -61,7 +63,9 @@ The application of persistent identifiers in neuroimaging has been discussed in 
 > ## Exercise: Identifiers (click on the arrow to the right to open)
 > **What is the difference between a globally unique and locally unique identifier?**
 >
-> Consider the Pub Med database. Pub Med assigns a unique identifier, the PMID, to each article, e.g., PMID:26978244. If you type in the identifier, [26978244](https://www.ncbi.nlm.nih.gov/pubmed/?term=26978244), into the Pub Med search box, you will get exactly one article, in this case on the FAIR data principles. But now type that number into Google search. You will see the [the article about the FAIR data principles](https://www.ncbi.nlm.nih.gov/pubmed/26978244) but also lots of other things identified by this number, e.g., [an image of a soccer player](https://www.dreamstime.com/stock-images-sk-rapid-vs-austria-wien-image26978244), [a house for sale](http://www.rightmove.co.uk/property-for-sale/property-26978244.html). In other words, divorced from a particular database, the identifier 26978244 is meaningless.
+> Consider the PubMed database. PubMed assigns a unique identifier, the PMID, to each article, e.g., PMID:26978244. If you type in the identifier, [26978244](https://www.ncbi.nlm.nih.gov/pubmed/?term=26978244), into the PubMed search box, you will get exactly one article, in this case on the FAIR data principles.  
+> 
+> But now type that number into Google search. You will see [the article about the FAIR data principles](https://www.ncbi.nlm.nih.gov/pubmed/26978244) but also lots of other things identified by this number, e.g., [an image of a soccer player](https://www.dreamstime.com/stock-images-sk-rapid-vs-austria-wien-image26978244), [a house for sale](http://www.rightmove.co.uk/property-for-sale/property-26978244.html). In other words, divorced from a particular database, the identifier 26978244 is meaningless.
 >
 > In contrast, when you type in a globally unique identifier, e.g., a DOI, it should identify one and only one object on the web, in this case the article about the FAIR data principles. To see the difference, notice the list of search results when you type in the DOI for this article: `10.1038/sdata.2016.18`.
 > As we will discuss in a later session, it is possible to turn a locally unique ID into a globally unique ID by adding additional features, e.g., namespaces before the ID, e.g., `pubmed/.
@@ -74,9 +78,9 @@ The application of persistent identifiers in neuroimaging has been discussed in 
 {: .challenge}
 
 > ## Exercise: Identifier Resolution (click on the arrow to the right to open)
-> **Where can I resolve globally unique identifiers**
+> **Where can I resolve globally unique identifiers?**
 >
-> The California Digital Library ([CDL](http://www.cdlib.org)) makes a number of tools available regarding persistent identifiers, including: registering DOIs and ARKs and providing resolution services. The N2T tool (Names to Things) is a resolving service that keeps names (identifiers) persistent, forwarding (resolving) them to the best known web addresses. For example, to resolve the PubMed identifier used in the above challenge - one would use the following call to N2T: [http://n2t.net/pubmed:26978244](http://n2t.net/pubmed:26978244)
+> The California Digital Library ([CDL](http://www.cdlib.org)) makes a number of tools available regarding persistent identifiers, including: registering DOIs and ARKs and providing resolution services. The N2T tool (Names to Things) is a resolving service that keeps names (identifiers) persistent, forwarding (resolving) them to the best known web addresses. For example, to resolve the PubMed identifier used in the above challenge, one would use the following call to N2T: [http://n2t.net/pubmed:26978244](http://n2t.net/pubmed:26978244)
 >
 > The CDL is partnering with [identifiers.org](http://identifiers.org) to maintain a registry of resolvable prefixes. In this exercise, please explore the [registry at identifiers.org](https://www.ebi.ac.uk/miriam/main/collections) and choose a repository.  Browse the repository and extract some IDs and test the resolvers at N2T [http://n2t.net/](http://n2t.net/) and identifiers.org [http://identifiers.org](http://identifiers.org).
 >
@@ -84,52 +88,54 @@ The application of persistent identifiers in neuroimaging has been discussed in 
 >
 {: .challenge}
 
+<a name="short-history"></a>
 ## Short history of open & linked data technologies
 
 The concepts introduced in the above section - research objects and PIDs - are important for understanding how we can adapt the web for sharing and integrating data. We are all familiar with web-accessible databases, that is, databases that are available for searching through the web. PubMed is one well-known example. But just because a database is web accessible, doesn't mean that its data are designed for use on the web. In fact, data contained in dynamic databases are often considered to be part of the [hidden web](https://en.wikipedia.org/wiki/Deep_web), that is, it is not easily indexed in search engines like Google. The [Neuroscience Information Framework](http://neuinfo.org) was designed to search inside of these databases. But there are ways to design databases so that they are more web friendly. A major proponent of using the internet for sharing data and not simply web document is [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee).
 
-Linked data is a method of publishing structured data on the web so that it can be interlinked and queried using a formal semantic query language ([https://en.wikipedia.org/wiki/Linked_data](https://en.wikipedia.org/wiki/Linked_data)). Linked Open Data is linked data that is covered under on open source license so that it can be reused by third parties. Linked data builds upon standard Web technologies, e.g., HTTP, RDF (Resource Description Framework) and URIs (Uniform Resource Identifiers). But rather than using these technologies to share web pages, linked data extends them to share information in a way that can be read automatically by computers. The goal is to allow data from different sources to be connected and queried through a web browser.
+**Linked data** is a method of publishing structured data on the web so that it can be interlinked and queried using a formal semantic query language ([https://en.wikipedia.org/wiki/Linked_data](https://en.wikipedia.org/wiki/Linked_data)). Linked Open Data is linked data that is covered under on open source license so that it can be reused by third parties. Linked data builds upon standard Web technologies, e.g., HTTP, RDF (Resource Description Framework) and URIs (Uniform Resource Identifiers). But rather than using these technologies to share web pages, linked data extends them to share information in a way that can be read automatically by computers. The goal is to allow data from different sources to be connected and queried through a web browser.
 
-Tim Berners-Lee coined the term [Linked Data in 2006](https://www.w3.org/DesignIssues/LinkedData.html) and laid out 4 basic principles:
+Tim Berners-Lee coined the term "Linked Data"" in 2006 and laid out 4 basic principles [[link](https://www.w3.org/DesignIssues/LinkedData.html)]:
 
 1. Use URIs to name (identify) things.
-1. Use HTTP URIs so that these things can be looked up (interpreted, "dereferenced").
-1. Provide useful information about what a name identifies when it's looked up, using open standards such as RDF, SPARQL, etc.
-1. Refer to other things using their HTTP URI-based names when publishing data on the Web.
+2. Use HTTP URIs so that these things can be looked up (interpreted, "dereferenced").
+3. Provide useful information about what a name identifies when it's looked up, using open standards such as RDF, SPARQL, etc.
+4. Refer to other things using their HTTP URI-based names when publishing data on the Web.
 
 We've introduced a few new terms here, so let's give a few explanations.
 
 ### URI
 
-A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is a PID, i.e, a string of characters used to identify an entity. URIs have a specific syntax (that's what makes them uniform), which we will not go into here (see [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)). One of the biggest points of confusion in the world of PIDs is the difference between a URI and a URL.  In fact, the terms URI and URL are often used interchangeably, but they are distinct. The easiest way to think about it is that a URL is a URI that happens to point to a resource over a network ([Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)). In other words, all URLs are URIs but not all URIs are URLs. In our above examples, we could turn a local identifier into a globally unique identifier by adding a namespace before the ID, e.g., `pubmed/26978244` If we add a network access protocol to that identifier, `**https://www.ncbi.nlm.nih.gov/**pubmed/26978244`, we have a URI that is also a URL. Because we are dealing here with data on the web, most of our URI examples will, in fact, be URLs in accordance with rule 2 of Linked Data above.
+A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is a PID, i.e, a string of characters used to identify an entity. URIs have a specific syntax (that's what makes them uniform), which we will not go into here (see [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)). One of the biggest points of confusion in the world of PIDs is the difference between a URI and a URL. In fact, the terms URI and URL are often used interchangeably, but they are distinct. The easiest way to think about it is that a URL is a URI that happens to point to a resource over a network ([Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)). In other words, *all URLs are URIs but not all URIs are URLs*. In our above examples, we could turn a local identifier into a globally unique identifier by adding a namespace before the ID, e.g., `pubmed/26978244` If we add a network access protocol to that identifier, `**https://www.ncbi.nlm.nih.gov/**pubmed/26978244`, we have a URI that is also a URL. Because we are dealing here with data on the web, most of our URI examples will, in fact, be URLs in accordance with the 2nd principle of Linked Data (Use HTTP URIs so that these things can be looked up).
 
 ### RDF 
 
-According to the W3C, the standards body for the web, [RDF](https://www.w3.org/RDF/) is *"a standard model for data interchange on the Web"*. RDF has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.
+According to W3C, the standards body for the web, [RDF](https://www.w3.org/RDF/) is *"a standard model for data interchange on the Web"*. RDF has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.
 
 RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a "triple"). Using this simple model, it allows structured and semi-structured data to be mixed, exposed, and shared across different applications.
 
-This linking structure forms a directed, labeled graph, where the edges represent the named link between two resources, represented by the graph nodes. This graph view is the easiest possible mental model for RDF and is often used in easy-to-understand visual explanations."
+This linking structure forms a directed, labeled graph, where the edges represent the named link between two resources, represented by the graph nodes. This graph view is the easiest possible mental model for RDF and is often used in easy-to-understand visual explanations.
 
 ### SPARQL
 
 [SPARQL](https://en.wikipedia.org/wiki/SPARQL) is the query language that is used to query RDF databases.
 
 **Examples**:
-An RDF triple comprises a subject, predicate and object, each identified by a URI. In a simple example, a statement such as: Kevin Bacon stars in the movie Footloose can be turned into RDF by coding the subject (Kevin Bacon), the predicate (is star of) and object (Movie:Footloose). A SPARQL query can then be formulated to Find all movies where "is star of" = Kevin Bacon.  Note that this example is highly simplified: please refer to [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework) and [W3C](https://www.w3.org/RDF/) examples for actual coding examples.
+An RDF triple comprises a subject, predicate and object, each identified by a URI. In a simple example, a statement such as: Kevin Bacon stars in the movie Footloose can be turned into RDF by coding the subject (Kevin Bacon), the predicate (is star of) and object (Movie:Footloose). A SPARQL query can then be formulated to Find all movies where "is star of" = Kevin Bacon.  Note that this example is highly simplified: please refer to actual coding examples at Wikipedia [here](https://en.wikipedia.org/wiki/Resource_Description_Framework) and at W3C [here](https://www.w3.org/RDF/).
 
 Although the majority of biomedical data sources have been slow to adopt the [Open Linked Data protocol](http://lod-cloud.net/), a perusal of the Linked Open Data Cloud indicates that life sciences comprises a substantial part of the web of data.
 
+<a name="benefits-lod"></a>
 ## Benefits of linked open data with examples
 
-The benefits of Linked Open Data are encapsulated in the description of RDF above:
+The benefits of **Linked Open Data (LOD)** are encapsulated in the description of RDF above:
 * It facilitates data interchange on the web
 * It facilitates data integration across sources even when schemas are different
 * It supports evolution of schemas over time with minimal disruption to data consumers
 
 What these benefits mean is that we can use the general architecture of the web to link not just web pages to each other, but objects within databases to similar objects in other databases.  Why is this important?  Currently, information about brain structures, diseases or genes is scattered across hundreds of databases. Searching NIF for [cerebellum](https://neuinfo.org/data/search?q=cerebellum&l=cerebellum#all), for example, yields over 1 million records from > 100 databases. These databases contain different types of information; some contain information on connectivity of the cerebellum, others on gene expression. Still others provide imaging data or measurements of the cerebellum in disease. Currently, a search across NIF will let you see what databases contain the term "cerebellum" and will let you visit each of them. But to integrate the information across them, e.g., find all images of cerebellum showing genes known to be implicated in Parkinson's disease requires a fair amount of work and multiple queries to multiple databases. For example, I might go to ClinVar to find a list of genes associated with Parkinson's disease, then use these genes to query NIF to find [image databases](https://neuinfo.org/data/source/nif-0000-00508-1/search?q=NR4A2&l=+NR4A2) that show expression of these genes.
 
-With Linked Open Data (LOD), this process becomes much easier. If each of these databases had exposed their data as LOD, it would be possible to construct the query: find all images of cerebellum showing genes known to be implicated in Parkinson's disease, so that it returned the same data in far fewer steps. Why? Because the links between these different data sources would be explicit, so the "mash up" of results from different data sources is facilitated.
+With LOD, this process becomes much easier. If each of these databases had exposed their data as LOD, it would be possible to construct the query: find all images of cerebellum showing genes known to be implicated in Parkinson's disease, so that it returned the same data in far fewer steps. Why? Because the links between these different data sources would be explicit, so the "mash up" of results from different data sources is facilitated.
 
 Of course, this type of integration is only possible if developers of databases for the life sciences agree to the same set of URIs for the things they refer to, in this case, concepts like "cerebellum" and "disease" and the relationships that connect them. These concepts are typically assigned URIs when they are represented in data structures called ontologies, essentially, formal models of knowledge within a domain. If each database develops its own identifier for Parkinson's Disease, then we are in the same boat as today:  we'd have to go to each database, find their data dictionaries and extract the particular identifier. A single set of identifiers for entities in the life sciences is one of the goals of the [OBO Foundry:  Open Biological Ontologies](http://www.obofoundry.org/). Where it has been achieved, e.g., the Gene Ontology in genomics, cross query of databases is highly facilitated. But for other biological domains, e.g., neuroscience, consistent use of identifiers for concepts and relationships across databases has been less successful. For this reason, life sciences has also had to maintain a lot of cross-mapping between concepts in ontologies and other controlled vocabularies.
 
@@ -144,9 +150,12 @@ Of course, this type of integration is only possible if developers of databases 
 > 5. Coursera's [Web of Data](https://www.coursera.org/learn/web-data?aid=true)
 {: .callout}
 
+<a name="fair-principles"></a>
 ## Towards the FAIR principles
 
-While LOD has had some uptake across the web, the number of databases using this protocol compared to the other technologies is still modest. But whether or not we use LOD, we do need to ensure that databases are designed specifically for the web and for reuse by humans and machines. To provide guidance for creating such databases independent of the technology used, the FAIR principles were issued through [FORCE11](http://force11.org): the Future of Research Communications and e-Scholarship. The FAIR principles put forth characteristics that contemporary data resources, tools, vocabularies and infrastructures should exhibit to assist discovery and reuse by third-parties through the web. [Wilkinson et al.,2016](https://www.nature.com/articles/sdata201618). FAIR stands for:  Findable, Accessible, Interoperable and Re-usable. The definition of FAIR is provided in Table 1:
+While LOD has had some uptake across the web, the number of databases using this protocol compared to the other technologies is still modest. But whether or not we use LOD, we do need to ensure that databases are designed specifically for the web and for reuse by humans and machines. To provide guidance for creating such databases independent of the technology used, the FAIR principles were issued through [FORCE11](http://force11.org): the Future of Research Communications and e-Scholarship. The FAIR principles put forth characteristics that contemporary data resources, tools, vocabularies and infrastructures should exhibit to assist discovery and reuse by third-parties through the web.  
+
+According to Wilkinson et al. ([2016](https://www.nature.com/articles/sdata201618)), FAIR stands for: Findable, Accessible, Interoperable and Re-usable. The definition of FAIR is provided in Table 1:
 
 Number | Principle
 --------- | -----------
@@ -170,7 +179,10 @@ R1.1      |(meta)data are released with a clear and accessible data usage licens
 R1.2      |(meta)data are associated with detailed provenance
 R1.3      |(meta)data meet domain-relevant community standards
 
-A detailed explanation of each of these is included in the [Wilkinson et al., 2016](https://www.nature.com/articles/sdata201618) article, and the Dutch Techcenter for Life Sciences has a set of excellent [tutorials](https://www.dtls.nl/fair-data/fair-principles-explained/), so we won't go into too much detail here.
+A detailed explanation of each of these is included in the article ([Wilkinson et al., 2016](https://www.nature.com/articles/sdata201618)).
+
+<img src="{{ page.root }}/tni2022/assets/img/FAIRprinciples850width.png" 
+alt="The FAIR data principles" width="80%"/>
 
 ### Findable
 Findable comprises two major attributes: the data set be identified by a PID, so that it can be unambiguously located by a machine and the data be described by sufficient metadata so that it an be discovered by a human. F3 connects the identifier to this rich metadata so that a human can verify that the dataset is correctly resolved. Finally, the data must be registered or indexed so that it can be found. The more machine-readable metadata that a data resource provides for its contents, the more likely a web search through a search engine like Google will find them.
@@ -193,7 +205,8 @@ The Linked Data protocol can be fully FAIR, if implemented properly, but as the 
 
 > ## Selected External Lesson Material
 > 1. [FAIR Data Principles Explained](https://www.dtls.nl/fair-data/fair-principles-explained/) - a step by step guide through the FAIR data principles
-> 2. An overview on FAIR Data and FAIR Data stewardship, and the roadmap for FAIR Data solutions coordinated by the Dutch Techcentre for Life Sciences: [FAIR data overview](https://www.slideshare.net/lolavo/fair-data-overview)
+> 2. [An overview on FAIR Data](https://www.slideshare.net/lolavo/fair-data-overview) and the roadmap for FAIR Data solutions coordinated by the Dutch Techcentre for Life Sciences
+> 3. [FAIR Data stewardship](https://www.dtls.nl/fair-data/data-stewardship/) by the Dutch Techcentre for Life Sciences
 {: .callout}
 
 > ## Exercise (click on the arrow to the right to open)
@@ -209,6 +222,7 @@ The Linked Data protocol can be fully FAIR, if implemented properly, but as the 
 > [Submit your answers via Google Form](https://goo.gl/forms/uCOC34qwJARtQzPT2)
 {: .challenge}
 
+<a name="fair-neuroimaging-data"></a>
 ## FAIR Neuroimaging Data
 
 ### Brain Imaging Data Structure (BIDS)
@@ -237,7 +251,7 @@ The Linked Data protocol can be fully FAIR, if implemented properly, but as the 
 > 1. Download the [sample BIDS dataset]({{site.root}}/data/ds000030_single_subj.zip)
 {: .challenge}
 
-### Neuro Imaging Data Model (NIDM)
+### Neuroimaging Data Model (NIDM)
 
 [NIDM](http://nidm.nidash.org) captures brain data, workflow, and results in a structured format using a derivative of the W3C PROV Data Model. Currently, results of fMRI analyses conducted in FSL and SPM can be stored using NIDM-Results. These results can be uploaded to NeuroVault for sharing with others.
 
