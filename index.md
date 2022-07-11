@@ -33,7 +33,7 @@ and [Software Carpentry]({{ site.swc_site }}) workshops.
 Please click on the buttons below to complete the surveys before and after the module.
 
 <p>
-  <a href="{{ page.root }}">
+  <a href="https://forms.office.com/r/8Jf1EjbiKy">
     <button type="button" class="btn btn-info">Pre-module Survey</button>
   </a>
 
