@@ -1,5 +1,5 @@
 ---
-title: "MRI Neuroimaging technique in clinical applications"
+title: "MRI Neuroimaging Technique in Clinical Applications"
 teaching: Self-paced
 exercises: 25
 instructor:

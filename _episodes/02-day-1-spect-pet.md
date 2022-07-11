@@ -1,5 +1,5 @@
 ---
-title: "SPECT & PET Neuroimaging, Quantification & AI in dementia & movement disorder"
+title: "SPECT & PET Neuroimaging, Quantification & AI in Dementia & Movement Disorder"
 teaching: 55
 exercises: 0
 instructor:

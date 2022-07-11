@@ -8,9 +8,13 @@ objectives:
 - "Understanding identifiers"
 - "History of open and linked data"
 - "Overview of the FAIR principles"
+- "Learn about resources a laboratory can utilize (off the shelf) to be a good steward of their data"
+- "Learn about different databasing options if a custom solution is desired"
 keypoints:
-- "Understanding the FAIR Data principles"
-- "Understanding identification of FAIR data"
+- Understanding the FAIR Data principles
+- Understanding identification of FAIR data
+- There are a number of tools, developed by the research community and also by companies, to assist in stewardship of laboratory data.
+- There are a number of options for developing your own custom database solution.
 ---
 
 ## Overview
@@ -23,6 +27,7 @@ This lesson provides an overview of strategies for making research outputs avail
 > - [Benefits of linked open data with examples](#benefits-lod)
 > - [Towards the FAIR principles](#fair-principles)
 > - [FAIR Neuroimaging Data](#fair-neuroimaging-data)
+> - [Neuroimaging Data Platforms](#neuroimaging-data-platforms)
 {: .callout}
 
 > ## References
@@ -234,12 +239,12 @@ The Linked Data protocol can be fully FAIR, if implemented properly, but as the 
 > 3. "The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments" (Gorgolewski et al 2016) [link](http://n2t.net/doi:10.1038/sdata.2016.44)
 {: .callout}
 
-> ## Exercise: Create a BIDS-compliant dataset(click on the arrow to the right to open)
+> ## Exercise: Create a BIDS-compliant dataset (click on the arrow to the right to open)
 >
-> In this exercise you will work through the creation of a BIDS dataset using sample data originally obtained from [OpenNeuro](http://openneuro.org).  Please follow the following steps:
+> In this exercise you will work through the creation of a BIDS dataset using sample data.  Please follow the following steps:
 >
-> 1. Download the [sample base dataset]({{site.root}}/data/ds000030_single_subj_base.zip) This sample data has been modified from the original OpenFMRI distribution for use in this exercise.
-> 2. Working with the BIDS material provided (above) and information from the [data publication in Nature Scientific Data](https://www.nature.com/articles/sdata2016110) and re-work the base dataset to conform to BIDS.
+> 1. Download the [sample base dataset]({{site.root}}/data/TNI001_base.zip). This sample data contain both MRI and SPECT images collected at University Hospital Southampton.
+> 2. Re-work the base dataset to conform to BIDS.
 > 3. As you work through this exercise - you can use the [BIDS validator](http://incf.github.io/bids-validator/) to check your progress (must use Google Chrome or Firefox).
 >
 {: .challenge}
@@ -248,7 +253,7 @@ The Linked Data protocol can be fully FAIR, if implemented properly, but as the 
 >
 > We have made the original BIDS dataset for the single subject available:
 >
-> 1. Download the [sample BIDS dataset]({{site.root}}/data/ds000030_single_subj.zip)
+> 1. Download the [sample BIDS dataset]({{site.root}}/data/TNI001_bids.zip)
 {: .challenge}
 
 ### Neuroimaging Data Model (NIDM)
@@ -287,4 +292,41 @@ To advance open science in neuroimaging the Organization for Human Brain Mapping
 
 > ## References
 > * Best practices in data analysis and sharing in neuroimaging using MRI (Nichols et al., 2017) [[link](https://www.nature.com/articles/nn.4500)]
+{: .callout}
+
+<a name="neuroimaging-data-platforms"></a>
+## Neuroimaging Data Platforms
+
+There are many options available when it comes to neuroimaging data management. A number of academic and commercial products allow you to manage your neuroimaging and associated data within their platform. This session focuses on resources available at the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS).
+
+### eXtensible Neuroimaging Archive Toolkit (XNAT)
+
+[XNAT](https://www.xnat.org) is an open-source imaging informatics platform that can store, manage, and share neuroimaging data. Originally developed by the Buckner Lab (now at Harvard University) and the [Neuroinformatics Research Group](https://github.com/NrgXnat) at Washington University in St Louis, XNAT facilitates common management, productivity, and quality assurance tasks for imaging and associated data. Thanks to its extensibility, XNAT has widely implemented to support a wide range of imaging-based projects around the world.
+
+#### XNAT at UHS
+
+The XNAT services are provided by UHS at the following addresses:
+
+Instances | Use Cases | URLs 
+--------- | --------- | ---- 
+Identifiable | UHS internal only | [UHS_XNAT_IDENTIFIABLE](https://connect.uhs.nhs.uk/app/template/,DanaInfo=rhmxnat.uhs.nhs.uk+Login.vm#!)
+Pseudonymised | UHS internal only | [UHS_XNAT_ANON](https://connect.uhs.nhs.uk/app/template/,DanaInfo=rhmxnatanon.uhs.nhs.uk+Login.vm#!)
+De-identified | UHS external | [https://xnat.uhs.nhs.uk](https://xnat.uhs.nhs.uk)
+
+#### Anonymisation using DicomEdit
+
+XNAT has built-in anonymisation/pseudonymisation using ``DicomEdit`` scripts, but users can consider using customised script such as ``pydicom`` to include important capabilities. ``DicomEdit`` is a domain-specific mini language that was developed by the same team as XNAT and is documented [here](https://wiki.xnat.org/xnat-tools/dicomedit/dicomedit-6-2-language-reference). Updated version of ``DicomEdit`` may have built-in important capabilities, e.g., replacing UIDs with new UIDs in a coherent way that does not break referential integrity, but this is not guaranteed.
+
+#### Download Data from XNAT
+
+XNAT makes the individual slices available at a fixed URL for download, rather it has a [REST API](https://wiki.xnat.org/display/XAPI/XNAT+API+Documentation) that is accessible via URLs and allows programmatic [discovery & downloading](https://wiki.xnat.org/display/XAPI/How+To+Download+Files+via+the+XNAT+REST+API) of those projects, **sessions**, and images that the user has access to. 
+
+An XNAT **project** is the top-level object in XNAT’s hierarchy. A project contains both subjects/patients and scans. XNAT implements access control using logon sessions, so all XNAT users have an account that they can log in to, and each XNAT project has access control lists that grant specific users a given level of access.
+
+> ## References
+> - [XNAT GitHub](https://github.com/NrgXnat)
+> - Full documentation for XNAT can be found on their [Wiki](https://wiki.xnat.org/documentation) page.
+> - [XNAT Tools: DicomEdit 6.2 Language Reference](https://wiki.xnat.org/xnat-tools/dicomedit/dicomedit-6-2-language-reference)
+> - [REST API](https://wiki.xnat.org/display/XAPI/XNAT+API+Documentation)
+> - [How To Download Files via the XNAT REST API](https://wiki.xnat.org/display/XAPI/How+To+Download+Files+via+the+XNAT+REST+API)
 {: .callout}

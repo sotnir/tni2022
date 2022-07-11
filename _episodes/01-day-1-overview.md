@@ -1,5 +1,5 @@
 ---
-title: "Overview of neuroimaging research at Southampton"
+title: "Overview of Neuroimaging Research at Southampton"
 start_time: 810
 start: true
 teaching: 30
