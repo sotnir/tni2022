@@ -19,7 +19,7 @@ keypoints:
 
 This lesson will discuss the use of nuclear medicine methods in brain imaging and review the recent literature on artificial intelligence (AI) for dementia diagnosis. 
 
-> ### References
+> ## References
 > Ferrando R, Damian A. Brain SPECT as a biomarker of neurodegeneration in dementia in the era of molecular imaging: still a valid option?. Frontiers in Neurology. 2021 May 10;12:640. 
 >
 > Chételat G, Arbizu J, Barthel H, Garibotto V, Law I, Morbelli S, van de Giessen E, Agosta F, Barkhof F, Brooks DJ, Carrillo MC. Amyloid-PET and 18F-FDG-PET in the diagnostic investigation of Alzheimer's disease and other dementias. The Lancet Neurology. 2020 Nov 1;19(11):951-62. 
