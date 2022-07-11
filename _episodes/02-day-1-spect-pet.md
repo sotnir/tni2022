@@ -15,6 +15,8 @@ keypoints:
 - Validation studies using independent datasets are required to assess generalisation of AI 
 ---
 
+## Overview
+
 This lesson will discuss the use of nuclear medicine methods in brain imaging and review the recent literature on artificial intelligence (AI) for dementia diagnosis. 
 
 ### Literature
