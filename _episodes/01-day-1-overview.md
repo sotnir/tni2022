@@ -7,74 +7,50 @@ exercises: 0
 instructor:
 - Angela Darekar
 objectives:
-- Get to know some of the clinical research activities at Southampton that utilise neuroimaging.
+- Understand the value of imaging in a clinical research context 
+- Appreciate the range of modalities and techniques available for research investigations and the outputs they produce 
+- Have an awareness of the infrastructure, expertise and people involved in neuroimaging research in Southampton 
+- Be aware of the range of projects and interests in neuroimaging in Southampton and the questions they are trying to answer 
+- Appreciate the future direction of neuroimaging in Southampton and new areas of work 
 keypoints:
-- We want to use this template to provide lesson materials in an open and useful format.
-
-- This is in line with our overall goal of making science (including scientific training) more open.
+- This talk will provide an introduction to clinical neuroimaging, the techniques used in research and areas of interest and ongoing projects in Southampton. 
 ---
 
-### ReproNim is *open*
+## Overview 
 
-The ReproNim event can only accommodate a limited number of participants.
-Nevertheless, we are committed to openness and we are committed to providing our
-materials in an open format, through a publicly accessible website.
+Neuroimaging is a broad field and includes many different imaging modalities and approaches, all with complementary attributes. We are mainly using MRI and Nuclear Medicine techniques to help solve a wide range of clinical problems, across the human lifecourse, from neonates to old-age. This overview will answer the following questions: 
+- What is clinical neuroimaging? 
+- Why use imaging in research? 
+- What different techniques are available to us? To include an introduction to: 
+  - Functional MRI 
+  - Diffusion MRI 
+  - Perfusion/arterial spin labelling 
+  - Dynamic contrast enhanced MRI 
+  - Quantitative susceptibility mapping 
+  - MR spectroscopy 
+  - Nuclear medicine techniques – SPECT/PET 
+- What imaging research infrastructure do we have in Southampton and who is involved? 
+- What are our academic interests in neuroimaging? 
+- What questions are we trying to answer (case studies)? 
+- What are our future directions? 
 
-### Using a template allows to create websites for each of the lectures
+## Useful information
 
-To enable access to the materials in an open format, but allow different
-instructors freedom in constructing their own materials, we provide a template
-(you're looking at it!), that can be relatively easily adapted to create lesson
-materials for many different lessons
+Question and Answers in MRI – very comprehensive but accessible explanation of the whole of MRI – feel free to delve in but these sections may be of interest: 
 
-To create a new lesson out of the template
+[https://www.mriquestions.com/hellipfunctional-imaging.html](https://www.mriquestions.com/hellipfunctional-imaging.html)  
 
-### Template lesson files are markdown files
+[https://www.mriquestions.com/artificial-intelligence-ai.html](https://www.mriquestions.com/artificial-intelligence-ai.html)
 
-* They are in the `_episodes` folder.
-* They are named sequentially:
-  - `01-first-part.md`
-  - `02-second-part.md`
-  - etc
-
-
-### Markdown format allows you to create nice web-pages
-
-And with only a really small amount of effort! It's text based, so you can
-write exactly what you intend to say.
-
-If you want to introduce a block of code into your lesson, write a block
-fenced by triple-tilde. Here is an example of that
-
-~~~
-import nibabel as nib
-img = nib.load('my_file.nii.gz')
-affine = img.affine
-~~~
-{: .python}
-
-
-Images can be embedded into the lesson plan, by using the following syntax:
-
-![an image]({{site.root}}/fig/rn-logo.png)
-
-To embed images, you will also want to copy the image file into the
-`fig` folder of the repository, and add that.
-
-> ## Exercises and challenges (click on the arrow to the right to open)
+> ## References
 >
->  Boxes with "challenges" can be interleaved with the lesson materials.
->  Consider adding a challenge every 15 minutes or so.
->    - This helps participants stay engaged.
->    - It surfaces questions that learners have as they go along.
->    - It breaks up the instruction, providing a bit of a diversion.
->    - It gives people a chance to engage in peer instruction, which is
->      is [known to help learning](https://en.wikipedia.org/wiki/Peer_instruction).
-{: .challenge}
-
-
-> ## Callouts
-> If you want to introduce a box with a "callout", use this syntax
-> This is useful for materials that you think of as explanatory asides
-> I usually use this for extra material that is "optional".
+> 1. [Jessica L. Wisnowskia, Pia Wintermark, Sonia L. Bonifacio, Christopher D. Smyser, James Barkovich, David Edwards, Linda S.de Vries, Terrie E. Inder, Vann Chau Newborn Brain Society Guidelines and Publications Committee. Neuroimaging in the term newborn with neonatal encephalopathy. Seminars in Fetal and Neonatal Medicine Volume 26, Issue 5, October 2021,101304](https://doi.org/10.1016/j.siny.2021.101304)  
+>
+> 2. [Rebecca G Brenner, Muriah D Wheelock, Jeffrey J Neil, Christopher D Smyser. Structural and functional connectivity in premature neonates Semin Perinatol. 2021 Nov;45(7):151473](https://doi.org/10.1016/j.semperi.2021.151473)
+>
+> 3. [Cristina Granziera, Jens Wuerfel, Frederik Barkhof, Massimiliano Calabrese et al (the MAGNIMS study group) Quantitative magnetic resonance imaging towards clinical application in multiple sclerosis. Brain. 2021 May; 144(5): 1296–1311](https://doi.org/10.1093%2Fbrain%2Fawab029) 
+>
+> 4. [Thomas Edmund Cope, Rimona Sharon Weil, Emrah Düzel, Bradford C Dickerson, James Benedict Rowe. Advances in neuroimaging to support translational medicine in dementia. J Neurol Neurosurg Psychiatry. 2021 Mar;92(3):263-270](https://doi.org/10.1136/jnnp-2019-322402)
+>
+> 5. [Axel Montagne, Daniel A Nation, Judy Pa, Melanie D Sweeney, Arthur W Toga, Berislav V Zlokovic Brain imaging of neurovascular dysfunction in Alzheimer's disease Acta Neuropathol. 2016 May;131(5):687-707](https://doi.org/10.1007/s00401-016-1570-0) 
 {: .callout}
