@@ -8,6 +8,8 @@ keypoints:
 - "A summary of everything so far"
 ---
 
-## Virtual Tour
-
-Write what you would like to say in the summary.
+> ## Virtual Tours
+>   - [Nuclear Medicine Department](https://www.thinglink.com/video/1415789883468808194)
+>   - [Positron Emission Tomography Scanner Tour](https://www.thinglink.com/video/1419252781205684227)
+{: .callout}
+ 

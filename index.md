@@ -4,6 +4,8 @@ layout: lesson
 
 <img src="{{ page.root }}/tni2022/assets/img/tni-repronim-cover.png" alt="Cover Image" width="100%"/>
 
+<center><p style="color:red"><font size="5"><i>The International Summer School has to be postponed to 2023 due to unforseen circumstances.</i></font></p></center>
+
 ## Overview
 
 This module is offered through the [University of Southampton International Summer School](https://www.southampton.ac.uk/international_summer_school), under the theme "[Challenges in Medicine](https://www.southampton.ac.uk/international_summer_school/themes/challenges-in-medicine/medicine-homepage.page)". The module will showcase the collaboration between the University of Southampton and University Hospital Southampton NHS Foundation Trust (UHS) in translational neuroimaging research. 
@@ -51,3 +53,5 @@ Clicking the NITRC-CE button below will launch an interactive computing environm
     <button type="button" class="btn btn-info">Launch NITRC-CE</button>
   </a>
 </p>
+
+<center><p style="color:red"><font size="5"><i>The International Summer School has to be postponed to 2023 due to unforseen circumstances.</i></font></p></center>

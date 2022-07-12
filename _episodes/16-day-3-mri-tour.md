@@ -10,12 +10,12 @@ keypoints:
 - "A summary of everything so far"
 ---
 
-## Virtual Tour
+> ## Virtual Tour
+>   - [Magnetic Resonance Imaging Scanner Tour](https://www.thinglink.com/scene/1415739392013631491)
+{: .callout}
 
-## What is a phantom?
+## Phantom
 
 ## PACS
 
 ## Data Pseudonymisation
-
-Write what you would like to say in the summary.
