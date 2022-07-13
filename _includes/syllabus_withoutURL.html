@@ -34,11 +34,7 @@
       {% if multiday %}<td class="col-md-1"><strong>{% if episode.start %}Day {{ day }}{% endif %}</strong></td>{% endif %}
       <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
       <td class="col-md-7">
-        {% if episode.break %}
           {{ episode.title }}
-        {% else %}
-          <a href="{{ site.root }}{{ episode.url }}">{{ episode.title }}</a>
-        {% endif %}
       </td>
       <td class="col-md-3">
         {% if episode.break %}
